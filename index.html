@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelly's Gallery | Explore the World </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+           <header class="header">
+        <nav class="navbar">
+            <h2 class="logo">Nelly's<span> Gallery</span></h2>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <section class="nelly" id="home">
+        <div class="nelly-content">
+            <h1>Discover the Beauty of the World</h1>
+
+            <p>
+                Explore beautiful nature, cities,
+                and architecture from around the world.
+            </p>
+
+            <a href="#gallery" class="nelly-button">
+                Explore Gallery
+            </a>
+        </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+
+        <div class="section-heading">
+            <h2>Our Photo Gallery</h2>
+
+            <p>
+                Discover beautiful places through photography.
+            </p>
+        </div>
+
+        <!-- */ Gallery Filter Buttons /* -->
+                 <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="nature">
+                Nature
+            </button>
+
+            <button class="filter-btn" data-filter="cities">
+                Cities
+            </button>
+
+            <button class="filter-btn" data-filter="architecture">
+                Architecture
+            </button>
+        </div>
+
+             <!-- Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+
+            <div class="gallery-item" data-category="nature">
+                <img
+                    src="images/mountains.jpg"
+                    alt="Beautiful mountain"
+                >
+                <div class="image-info">
+                    <h3>Sunsets on Mountain</h3>
+                    <p>Nature</p>
+                </div>
+            </div>
+
+
+            <div class="gallery-item" data-category="cities">
+                <img
+                    src="images/city.jpg"
+                    alt="Queenland city skyline"
+                >
+                <div class="image-info">
+                    <h3>City Lights</h3>
+                    <p>Cities</p>
+                </div>
+            </div>
+
+
+            <div class="gallery-item" data-category="architecture">
+                <img
+                    src="images/archithecture.jpg"
+                    alt="Modern architectural building"
+                >
+                <div class="image-info">
+                    <h3>Modern Design</h3>
+                    <p>Architecture</p>
+                </div>
+            </div>
+
+
+            <div class="gallery-item" data-category="nature">
+                <img
+                    src="images/landscape.jpg"
+                    alt="Beautiful hilly landscape"
+                >
+                <div class="image-info">
+                    <h3>Landscape with hills and pink flowers</h3>
+                    <p>Nature</p>
+                </div>
+            </div>
+
+
+            <div class="gallery-item" data-category="cities">
+                <img
+                    src="images/city-3.jpg"
+                    alt="City street and buildings at night"
+                >
+                <div class="image-info">
+                    <h3>Urban Life at night</h3>
+                    <p>Cities</p>
+                </div>
+            </div>
+
+
+            <div class="gallery-item" data-category="architecture">
+                <img
+                    src="images/archithecture-2.jpg"
+                    alt="Beautiful building design"
+                >
+                <div class="image-info">
+                    <h3>City Structure</h3>
+                    <p>Architecture</p>
+                </div>
+            </div>
+
+
+            <div class="gallery-item" data-category="nature">
+                <img
+                    src="images/forest.jpg"
+                    alt="Forest with long trees"
+                >
+                <div class="image-info">
+                    <h3>Forest Escape</h3>
+                    <p>Nature</p>
+                </div>
+            </div>
+
+
+            <div class="gallery-item" data-category="cities">
+                <img
+                    src="images/city-2.jpg"
+                    alt="Beautiful Sunset city skyline"
+                >
+                <div class="image-info">
+                    <h3>Sunset City Skyline</h3>
+                    <p>Cities</p>
+                </div>
+            </div>
+
+
+            <div class="gallery-item" data-category="architecture">
+                <img
+                    src="images/archithecture-3.jpg"
+                    alt="Architectural details"
+                >
+                <div class="image-info">
+                    <h3>Creative Architecture</h3>
+                    <p>Architecture</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h2>About Nelly's Gallery</h2>
+
+        <p>
+            Nelly's Gallery is a collection of beautiful photographs
+            that inspire people to explore the world, appreciate
+            nature, and discover amazing architecture.
+        </p>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+
+        <p>
+            Thank you for exploring our gallery.
+            We hope you enjoyed the journey.
+        </p>
+
+        <a class="nesco" href="nebenezer86@example.com">Send us an email</a>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Nelly's Gallery. All rights reserved.</p>
+    </footer>
+
+
+    <!-- Image Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">
+            &times;
+        </button>
+
+        <img id="lightboxImage" src="" alt="Expanded gallery image">
+
+        <p id="lightboxCaption"></p>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+    
+</body>
+</html>
